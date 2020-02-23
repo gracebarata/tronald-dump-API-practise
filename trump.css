@@ -1,46 +1,87 @@
 body {
-  background: #36d1dc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #5b86e5,
-    #36d1dc
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #5b86e5,
-    #36d1dc
-  ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-button {
-  background-color: rgb(231, 106, 190);
-  font-size: 50px;
-  border-width: dotted;
-  font-family: "Raleway", sans-serif;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
 
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#pic {
+  max-width: 50%;
 }
 
 #trump-pic {
-  max-width: 50%;
+  max-width: 90%;
  display: block;
  margin-left: auto;
  margin-right: auto;
- border: solid 10px blueviolet
- 
+ margin-bottom: 5em;
+ margin-top: 7em;
+ border: solid 9px rgb(139, 209, 241);
+ border-radius: 50%
 }
 
-p {
-  font-family: "Raleway", sans-serif;
+
+button {
+  background-color: rgb(231, 106, 190);
+  font-size: 40px;
+  color: #071063;
+  font-family: 'Reenie Beanie';
+  display: block;
+  margin-left: 100px;
+  margin-right: 20px;
+  margin-top: 10%;
+  position: relative;
+  border-radius: 5%;
+  padding: 1.5%
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+#quote {
+  max-width: 50%;
+  padding: 6%;
+  }
+
+h1 {
+  color: white;
+  font-family: 'Reenie Beanie';
   text-align: center;
   position: relative;
+  max-width: 70vw;
+}
+
+.speech-bubble {
+	position: relative;
+  background: #242f89;
+  border: solid #f1a7b1 10px;
+	border-radius: 3em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 24px solid transparent;
+	border-right-color: #242f89;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -12px;
+	margin-left: -24px;
 }
 
 .rotate-center {
-	-webkit-animation: rotate-center 4s ease-in-out both;
-            animation: rotate-center 4 s ease-in-out both;
+	-webkit-animation: rotate-center 1s ease-in-out both;
+            animation: rotate-center 1s ease-in-out both;
             animation-iteration-count: infinite;
 }
 
